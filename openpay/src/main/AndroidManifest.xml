@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.com.openpay.sdkandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity
+            android:name=".internal.OpenpayCheckoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:theme="@style/Theme.OpenpayDialog" />
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.library"
+    id "kotlin-android"
+    id "kotlin-parcelize"
+}
+
+android {
+    compileSdkVersion versions.compile_sdk
+    buildToolsVersion versions.build_tools
+
+    defaultConfig {
+        minSdkVersion versions.min_sdk
+        targetSdkVersion versions.target_sdk
+        buildConfigField "String", "OPENPAY_API_VERSION", "\"$API_VERSION\""
+
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        test.java.srcDirs += "src/test/kotlin"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = versions.jvm_target
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:${versions.appcompat}"
+    implementation "androidx.activity:activity-ktx:${versions.activity_ktx}"
+    implementation "androidx.fragment:fragment-ktx:${versions.fragment_ktx}"
+    testImplementation "junit:junit:${versions.junit}"
+}

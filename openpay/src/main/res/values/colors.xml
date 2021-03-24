@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="openpay_amber">#FFB81C</color>
+    <color name="openpay_granite">#333332</color>
+    <color name="openpay_ripple_light">#1f000000</color>
+    <color name="openpay_ripple_dark">#33ffffff</color>
+</resources>

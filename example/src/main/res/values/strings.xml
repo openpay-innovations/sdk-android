@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Openpay Integration</string>
+    <string name="checkout_label_total">Total:</string>
+    <string name="checkout_label_firstName">First Name</string>
+    <string name="checkout_label_lastName">Last Name</string>
+    <string name="checkout_label_emailAddress">Email Address</string>
+    <string name="checkout_label_phoneNumber">Phone Number</string>
+    <string name="checkout_label_address">Address</string>
+    <string name="checkout_label_city">City</string>
+    <string name="checkout_label_state">State</string>
+    <string name="checkout_label_postCode">Post Code</string>
+    <string name="checkout_label_pay">Pay</string>
+    <string name="checkout_progressMessage_orderCreation">Creating order…</string>
+    <string name="checkout_resultMessage_cancelled">Checkout was cancelled</string>
+    <string name="checkout_resultMessage_failed">An error occurred during checkout</string>
+    <string name="checkout_resultMessage_couldNotProceed">Checkout could not proceed</string>
+    <string name="receipt_message">Order Completed%n%n#%1$s%n%nTotal: %2$s</string>
+    <string name="receipt_label_done">Done</string>
+</resources>

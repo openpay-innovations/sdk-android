@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="openpay_dialog_checkoutLoadError_title">Reload checkout?</string>
+    <string name="openpay_dialog_checkoutLoadError_message">An error has occurred while attempting to load the checkout page.%1$s</string>
+    <string name="openpay_dialog_checkoutLoadError_button_reload">Reload</string>
+    <string name="openpay_button_payWithOpenpay_contentDescription">Pay with Open pay</string>
+    <string name="openpay_badge_openpay_contentDescription">Openpay</string>
+</resources>

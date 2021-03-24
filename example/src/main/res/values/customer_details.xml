@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="customer_firstName">John</string>
+    <string name="customer_lastName">Smith</string>
+    <string name="customer_emailAddress">AppTestUser@xx.yy</string>
+    <string name="customer_phoneNumber">+61 491 570 156</string>
+    <string name="customer_address">221B Baker Street</string>
+    <string name="customer_city">Melbourne</string>
+    <string name="customer_state">VIC</string>
+    <string name="customer_postCode">3000</string>
+</resources>

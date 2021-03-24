@@ -1,0 +1,46 @@
+buildscript {
+    apply from: file("versions.gradle")
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${versions.android_gradle_plugin}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+    }
+}
+
+subprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    configurations {
+        ktlint
+    }
+
+    dependencies {
+        ktlint "com.pinterest:ktlint:${versions.ktlint}"
+    }
+
+    task ktlint(type: JavaExec, group: "verification") {
+        description = "Check Kotlin code style."
+        main = "com.pinterest.ktlint.Main"
+        classpath = configurations.ktlint
+        args "src/**/*.kt"
+    }
+
+    task ktlintFormat(type: JavaExec, group: "formatting") {
+        description = "Fix Kotlin code style deviations."
+        main = "com.pinterest.ktlint.Main"
+        classpath = configurations.ktlint
+        args "-F", "src/**/*.kt"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

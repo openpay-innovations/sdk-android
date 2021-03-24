@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cornerRadius" format="dimension" />
+
+    <declare-styleable name="OpenpayButton">
+        <attr name="buttonColors" format="enum">
+            <enum name="graniteOnAmber" value="0" />
+            <enum name="amberOnGranite" value="1" />
+            <enum name="graniteOnWhite" value="2" />
+            <enum name="whiteOnGranite" value="3" />
+        </attr>
+
+        <attr name="cornerRadius" />
+    </declare-styleable>
+
+    <declare-styleable name="OpenpayBadge">
+        <attr name="badgeColors">
+            <enum name="graniteOnAmber" value="0" />
+            <enum name="amberOnGranite" value="1" />
+        </attr>
+
+        <attr name="cornerRadius" />
+    </declare-styleable>
+
+    <declare-styleable name="OpenpayLogo">
+        <attr name="logoColors">
+            <enum name="granite" value="0" />
+            <enum name="white" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

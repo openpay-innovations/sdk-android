@@ -1,0 +1,133 @@
+# Binaries
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Generated files
+bin/
+gen/
+obj/
+out/
+release/
+*.class
+*.dex
+
+# Logs
+*.log
+
+# Gradle
+.gradle/
+!/gradle/wrapper/gradle-wrapper.jar
+
+# Signing/Keystore
+.signing/
+*.jks
+*.keystore
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
+
+# Google Services
+google-services.json
+
+# IntelliJ IDEA
+.idea/caches/
+.idea/copyright/profiles_settings.xml
+.idea/dictionaries/
+.idea/libraries
+.idea/caches/
+.idea/libraries/
+.idea/shelf/
+.idea/scopes/scope_settings.xml
+.idea/.name
+.idea/assetWizardSettings.xml
+.idea/compiler.xml
+.idea/dataSources.ids
+.idea/datasources.xml
+.idea/dynamic.xml
+.idea/encodings.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/sqlDataSources.xml
+.idea/tasks.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+*.iml
+*.iws
+
+# Android Studio
+.cxx/
+.navigation/
+build/
+captures/
+/*/build/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+.externalNativeBuild
+gen-external-apklibs
+local.properties
+output.json
+
+# Eclipse
+.settings/
+proguard/
+.classpath
+.cproject
+.project
+
+# Linux
+.fuse_hidden*
+.directory
+.nfs*
+.Trash-*
+
+# macOS
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.DS_Store?
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Icon
+Network Trash Folder
+Temporary Items
+
+# Windows
+$RECYCLE.BIN/
+[Dd]esktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db:encryptable
+*.cab
+*.lnk
+*.msi
+*.msix
+*.msm
+*.msp
+*.stackdump
+
+# Temporary files
+*.swp
+*~
