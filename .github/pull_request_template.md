@@ -3,7 +3,7 @@ Thank you for your pull request. Before proceeding, please review the requiremen
 
 Bug fixes and new features should include tests and documentation.
 
-Contributors guide: https://github.com/openpay-innovations/sdk-android/blob/master/CONTRIBUTING.md
+Contributors guide: https://github.com/openpay-innovations/sdk-android/blob/main/CONTRIBUTING.md
 -->
 
 ## Summary of Changes
@@ -25,4 +25,4 @@ Place an x in the appropriate boxes and remove items that are not applicable.
 - [ ] Lint and unit tests pass locally with my changes
 - [ ] I have documented my changes
 
-[1]: https://github.com/openpay-innovations/sdk-android/blob/main/CONTRIBUTING.md
+[1]: ../CONTRIBUTING.md
