@@ -67,6 +67,6 @@ This project is subject to the conditions detailed in the repository's [LICENSE]
 [issues]: https://github.com/openpay-innovations/sdk-android/issues
 [license]: LICENSE
 [new-issue]: https://github.com/openpay-innovations/sdk-android/issues/new/choose
-[pr-template]: .github/PULL_REQUEST_TEMPLATE.md
+[pr-template]: .github/pull_request_template.md
 [pr-docs]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review
 [readme]: README.md
