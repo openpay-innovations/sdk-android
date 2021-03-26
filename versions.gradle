@@ -2,7 +2,7 @@ ext.versions = [
     // Build configuration
     compile_sdk          : 30,
     build_tools          : "30.0.3",
-    min_sdk              : 21,
+    min_sdk              : 23,
     target_sdk           : 30,
     jvm_target           : "1.8",
 
