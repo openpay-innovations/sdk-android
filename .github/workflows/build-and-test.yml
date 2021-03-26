@@ -28,7 +28,7 @@ jobs:
             - name: Publish test results
               uses: mikepenz/action-junit-report@v2
               with:
-                  check_name: JUnit Test Results
+                  check_name: Publish Test Results
                   report_paths: '**/build/test-results/test/TEST-*.xml'
                   github_token: ${{ secrets.GITHUB_TOKEN }}
 
