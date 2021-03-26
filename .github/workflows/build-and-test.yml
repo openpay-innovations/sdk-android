@@ -7,8 +7,8 @@ on:
         branches: [main]
 
 jobs:
-    build-and-test-sdk:
-        name: Build and Test SDK
+    test-sdk:
+        name: Test SDK
         runs-on: ubuntu-latest
         steps:
             - name: Clone repository
@@ -33,7 +33,7 @@ jobs:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
 
     build-example:
-        name: Build Example Project
+        name: Build Example App
         runs-on: ubuntu-latest
         steps:
             - name: Clone repository
