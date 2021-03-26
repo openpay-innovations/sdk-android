@@ -1,5 +1,5 @@
 ---
-name: "Bug report"
+name: "Report a bug"
 about: Create a bug report to help us improve the Openpay SDK for Android
 title: 'Bug: '
 labels: "bug"
