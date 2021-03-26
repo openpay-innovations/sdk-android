@@ -1,6 +1,6 @@
 ---
-name: "Feature request"
-about: Suggest an enhancement to this project
+name: "Request a feature"
+about: Suggest an enhancement to the Openpay SDK for Android
 title: 'Feature: '
 labels: 'enhancement'
 ---
