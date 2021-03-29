@@ -75,6 +75,8 @@ The provided components offer several different color options and have been desi
 
 All constraints mentioned below apply by default and must continue to do so after any customisation.
 
+Please see the [style guide][style-guide] for further information.
+
 ### Buttons
 
 ![Granite on Amber payment button][button-granite-amber]
@@ -145,6 +147,7 @@ All contributions are welcome! Please refer to our [contribution guide][contribu
 [ktlint-badge]: https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg
 [jar]: https://search.maven.org/classic/remote_content?g=au.com.openpay.sdkandroid&a=openpay&v=LATEST
 [snapshots]: https://oss.sonatype.org/content/repositories/snapshots/au/com/openpay/sdk-android/
+[style-guide]: styleguide.pdf
 [button-granite-amber]: images/button_granite_on_amber.png
 [button-amber-granite]: images/button_amber_on_granite.png
 [button-granite-white]: images/button_granite_on_white.png
