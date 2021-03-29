@@ -29,7 +29,8 @@ jobs:
               uses: mikepenz/action-junit-report@v2
               with:
                   check_name: Publish Test Results
-                  report_paths: '**/build/test-results/**/TEST-*.xml'
+                  report_paths: 'openpay/build/test-results/*/TEST-*.xml'
+                  require_tests: false
                   github_token: ${{ secrets.GITHUB_TOKEN }}
 
     build-example:
