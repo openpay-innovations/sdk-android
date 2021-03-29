@@ -12,8 +12,6 @@ android {
         minSdkVersion versions.min_sdk
         targetSdkVersion versions.target_sdk
         buildConfigField "String", "OPENPAY_API_VERSION", "\"$API_VERSION\""
-
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildFeatures {
