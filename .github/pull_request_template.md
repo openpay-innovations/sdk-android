@@ -20,9 +20,7 @@ Document anything here that you think is important or would be of specific inter
 <!--
 Place an x in the appropriate boxes and remove items that are not applicable.
 -->
-- [ ] I have read the [CONTRIBUTING][1] guide
+- [ ] I have read the contributors guide
 - [ ] I have added tests for my changes
 - [ ] Lint and unit tests pass locally with my changes
 - [ ] I have documented my changes
-
-[1]: ../CONTRIBUTING.md
