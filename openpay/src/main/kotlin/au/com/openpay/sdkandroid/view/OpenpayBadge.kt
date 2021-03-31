@@ -59,7 +59,7 @@ class OpenpayBadge @JvmOverloads constructor(
     private fun update() {
         setImageDrawable(
             context.coloredDrawable(
-                drawableResId = R.drawable.openpay_badge_fg,
+                drawableResId = R.drawable.openpay_logo_fg,
                 colorResId = colorScheme.foregroundColorResId
             )
         )
