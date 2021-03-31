@@ -1,49 +1,51 @@
 name: Build and Test
 
 on:
-    push:
-        branches: [main]
-    pull_request:
-        branches: [main]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-    test-sdk:
-        name: Test SDK
-        runs-on: ubuntu-latest
-        steps:
-            - name: Clone repository
-              uses: actions/checkout@v2
+  test-sdk:
+    name: Test SDK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
 
-            - name: Set up JDK 1.8
-              uses: actions/setup-java@v1
-              with:
-                  java-version: 1.8
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
 
-            - name: Run lint check
-              run: ./gradlew openpay:lintDebug openpay:ktlint
+      - name: Run lint check
+        run: ./gradlew openpay:lintDebug openpay:ktlint
 
-            - name: Run unit tests
-              run: ./gradlew openpay:testDebugUnitTest
+      - name: Run unit tests
+        run: ./gradlew openpay:testDebugUnitTest
 
-            - name: Publish test results
-              uses: mikepenz/action-junit-report@v2
-              with:
-                  check_name: Publish Test Results
-                  report_paths: 'openpay/build/test-results/*/TEST-*.xml'
-                  require_tests: false
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish test results
+        uses: mikepenz/action-junit-report@v2
+        with:
+          check_name: Publish Test Results
+          report_paths: 'openpay/build/test-results/*/TEST-*.xml'
+          require_tests: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-    build-example:
-        name: Build Example App
-        runs-on: ubuntu-latest
-        steps:
-            - name: Clone repository
-              uses: actions/checkout@v2
+  build-example:
+    name: Build Example App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
 
-            - name: Set up JDK 1.8
-              uses: actions/setup-java@v1
-              with:
-                  java-version: 1.8
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
 
-            - name: Build and run lint check
-              run: ./gradlew example:buildDebug example:lintDebug example:ktlint
+      - name: Build and run lint check
+        run: ./gradlew example:buildDebug example:lintDebug example:ktlint

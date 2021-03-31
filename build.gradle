@@ -9,10 +9,15 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:${versions.android_gradle_plugin}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+        classpath "com.vanniktech:gradle-maven-publish-plugin:${versions.maven_publish_gradle_plugin}"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${versions.dokka}"
     }
 }
 
 subprojects {
+    group = GROUP
+    version = VERSION_NAME
+
     repositories {
         google()
         jcenter()
