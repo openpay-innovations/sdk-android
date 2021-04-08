@@ -19,7 +19,7 @@ The Openpay SDK for Android provides frictionless integration of the Openpay exp
 Download the [latest JAR][jar] from Maven central or add a Gradle dependency:
 
 ```gradle
-implementation "au.com.openpay:sdk-android:0.0.1"
+implementation "au.com.openpay:sdk-android:0.0.1-SNAPSHOT"
 ```
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snapshots].
@@ -75,7 +75,12 @@ The provided components offer several different color options and have been desi
 
 All constraints mentioned below apply by default and must continue to do so after any customisation.
 
-Please see the [style guide][style-guide] for further information.
+Please see the appropriate style guide for [Openpay][style-guide-openpay] or [Opy][style-guide-opy] for further information.
+
+Components will use the Openpay branding by default; to present the Opy branding instead use the following code:
+```kotlin
+Openpay.branding = OpenpayBranding.OPY
+```
 
 ### Buttons
 
@@ -147,7 +152,8 @@ All contributions are welcome! Please refer to our [contribution guide][contribu
 [ktlint-badge]: https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg
 [jar]: https://search.maven.org/classic/remote_content?g=au.com.openpay.sdkandroid&a=openpay&v=LATEST
 [snapshots]: https://oss.sonatype.org/content/repositories/snapshots/au/com/openpay/sdk-android/
-[style-guide]: styleguide.pdf
+[style-guide-openpay]: styleguide_openpay.pdf
+[style-guide-opy]: styleguide_opy.pdf
 [button-granite-amber]: images/button_granite_on_amber.png
 [button-amber-granite]: images/button_amber_on_granite.png
 [button-granite-white]: images/button_granite_on_white.png

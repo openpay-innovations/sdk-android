@@ -5,13 +5,17 @@ import android.util.AttributeSet
 import androidx.annotation.ColorRes
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.res.use
+import au.com.openpay.sdkandroid.Openpay
 import au.com.openpay.sdkandroid.R
 import au.com.openpay.sdkandroid.internal.BackgroundDrawable
 import au.com.openpay.sdkandroid.internal.color
 import au.com.openpay.sdkandroid.internal.coloredDrawable
 import au.com.openpay.sdkandroid.internal.dp
+import au.com.openpay.sdkandroid.view.OpenpayBranding.OPENPAY
+import au.com.openpay.sdkandroid.view.OpenpayBranding.OPY
 
 private const val MIN_WIDTH: Int = 75
+private const val MIN_WIDTH_OPY: Int = 40
 
 private const val PADDING_START: Int = 6
 private const val PADDING_TOP: Int = 6
@@ -39,7 +43,10 @@ class OpenpayBadge @JvmOverloads constructor(
 
     init {
         importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO
-        minimumWidth = MIN_WIDTH.dp
+        minimumWidth = when (Openpay.branding) {
+            OPENPAY -> MIN_WIDTH.dp
+            OPY -> MIN_WIDTH_OPY.dp
+        }
         setPaddingRelative(PADDING_START.dp, PADDING_TOP.dp, PADDING_END.dp, PADDING_BOTTOM.dp)
 
         context.theme.obtainStyledAttributes(attrs, R.styleable.OpenpayBadge, 0, 0)
@@ -59,7 +66,10 @@ class OpenpayBadge @JvmOverloads constructor(
     private fun update() {
         setImageDrawable(
             context.coloredDrawable(
-                drawableResId = R.drawable.openpay_logo_fg,
+                drawableResId = when (Openpay.branding) {
+                    OPENPAY -> R.drawable.openpay_logo_fg
+                    OPY -> R.drawable.openpay_logo_fg_opy
+                },
                 colorResId = colorScheme.foregroundColorResId
             )
         )

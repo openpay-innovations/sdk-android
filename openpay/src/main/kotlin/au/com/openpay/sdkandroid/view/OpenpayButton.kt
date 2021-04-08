@@ -5,10 +5,13 @@ import android.util.AttributeSet
 import androidx.annotation.ColorRes
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.content.res.use
+import au.com.openpay.sdkandroid.Openpay
 import au.com.openpay.sdkandroid.R
 import au.com.openpay.sdkandroid.internal.coloredDrawable
 import au.com.openpay.sdkandroid.internal.dp
 import au.com.openpay.sdkandroid.internal.rippleDrawable
+import au.com.openpay.sdkandroid.view.OpenpayBranding.OPENPAY
+import au.com.openpay.sdkandroid.view.OpenpayBranding.OPY
 
 private const val MIN_HEIGHT: Int = 48
 private const val MIN_WIDTH: Int = 218
@@ -63,7 +66,10 @@ class OpenpayButton @JvmOverloads constructor(
     private fun update() {
         setImageDrawable(
             context.coloredDrawable(
-                drawableResId = R.drawable.openpay_button_fg,
+                drawableResId = when (Openpay.branding) {
+                    OPENPAY -> R.drawable.openpay_button_fg
+                    OPY -> R.drawable.openpay_button_fg_opy
+                },
                 colorResId = colorScheme.foregroundColorResId
             )
         )
