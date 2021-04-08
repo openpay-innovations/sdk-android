@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import com.example.openpay.R
-import com.example.openpay.ui.checkout.CheckoutFragment
 import com.example.openpay.databinding.ActivityMainBinding
+import com.example.openpay.ui.checkout.CheckoutFragment
 
 class MainActivity : AppCompatActivity() {
 
