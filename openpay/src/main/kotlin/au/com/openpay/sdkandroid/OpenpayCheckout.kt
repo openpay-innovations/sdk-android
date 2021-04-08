@@ -11,11 +11,8 @@ import au.com.openpay.sdkandroid.internal.CheckoutResultContract
 import au.com.openpay.sdkandroid.internal.OpenpayCheckoutActivity
 
 /**
- * Create an [ActivityResultLauncher] for an [OpenpayCheckoutActivity].
- *
- * @param onCheckoutResult A callback that expects an [OpenpayCheckoutResult].
- * @return A [CheckoutWithOpenpay] instance that will launch an [OpenpayCheckoutActivity]
- * for an [OpenpayCheckoutResult].
+ * Returns a [launcher][CheckoutWithOpenpay] that will present an [OpenpayCheckoutActivity] and
+ * pass the [result][OpenpayCheckoutResult] to the given [callback][onCheckoutResult].
  */
 @JvmName("commence")
 fun ComponentActivity.checkoutWithOpenpay(
@@ -25,11 +22,8 @@ fun ComponentActivity.checkoutWithOpenpay(
 )
 
 /**
- * Create an [ActivityResultLauncher] for an [OpenpayCheckoutActivity].
- *
- * @param onCheckoutResult A callback that expects an [OpenpayCheckoutResult].
- * @return A [CheckoutWithOpenpay] instance that will launch an [OpenpayCheckoutActivity]
- * for an [OpenpayCheckoutResult].
+ * Returns a [launcher][CheckoutWithOpenpay] that will present an [OpenpayCheckoutActivity] and
+ * pass the [result][OpenpayCheckoutResult] to the given [callback][onCheckoutResult].
  */
 @JvmName("commence")
 fun Fragment.checkoutWithOpenpay(
@@ -41,10 +35,8 @@ fun Fragment.checkoutWithOpenpay(
 data class CheckoutWithOpenpay(private val checkoutLauncher: ActivityResultLauncher<String>) {
 
     /**
-     * Launch an instance of [OpenpayCheckoutActivity].
-     *
-     * @param handoverUrl The Openpay handover URL.
-     * @param transactionToken A valid Openpay transaction token.
+     * Launches an [OpenpayCheckoutActivity] with a URL comprising the given
+     * [handover URL][handoverUrl] and [transaction token][transactionToken].
      */
     operator fun invoke(
         handoverUrl: String,

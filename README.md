@@ -19,7 +19,7 @@ The Openpay SDK for Android provides frictionless integration of the Openpay exp
 Download the [latest JAR][jar] from Maven central or add a Gradle dependency:
 
 ```gradle
-implementation "au.com.openpay:sdk-android:0.0.1"
+implementation "au.com.openpay:sdk-android:0.0.1-SNAPSHOT"
 ```
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snapshots].
@@ -77,7 +77,10 @@ All constraints mentioned below apply by default and must continue to do so afte
 
 Please see the appropriate style guide for [Openpay][style-guide-openpay] or [Opy][style-guide-opy] for further information.
 
-> NOTE: Devices set to `Locale.US` will present the Opy branding.
+Components will use the Openpay branding by default; to present the Opy branding instead use the following code:
+```kotlin
+Openpay.branding = OpenpayBranding.OPY
+```
 
 ### Buttons
 
