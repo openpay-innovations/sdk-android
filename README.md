@@ -30,6 +30,8 @@ The Openpay SDK for Android requires Android API 23+.
 
 The SDK provides easy integration of the Openpay web checkout process and accessible badges and buttons.
 
+![Openpay checkout process][checkout]
+
 ## Integration
 
 Start the Openpay checkout flow by launching the ActivityResultLauncher provided by the SDK with a given checkout URL and transaction token.
@@ -152,6 +154,7 @@ All contributions are welcome! Please refer to our [contribution guide][contribu
 [ktlint-badge]: https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg
 [jar]: https://search.maven.org/classic/remote_content?g=au.com.openpay.sdkandroid&a=openpay&v=LATEST
 [snapshots]: https://oss.sonatype.org/content/repositories/snapshots/au/com/openpay/sdk-android/
+[checkout]: images/checkout.gif
 [style-guide-openpay]: styleguide_openpay.pdf
 [style-guide-opy]: styleguide_opy.pdf
 [button-granite-amber]: images/button_granite_on_amber.png
